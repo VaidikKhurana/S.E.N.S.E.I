@@ -1,4 +1,5 @@
 **Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I)**
+![S E N S E I](https://github.com/VaidikKhurana/S.E.N.S.E.I/assets/107250289/8ff77874-5ce0-45e3-a89c-d9fb020fbe71)
 
 **1. Introduction:**
 Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I) is an AI-powered virtual assistant designed to provide intuitive solutions and engage in seamless interactions with users through speech and text commands. It incorporates various functionalities ranging from basic greetings to complex tasks such as searching the web, controlling multimedia, retrieving information, managing memory, and even initiating server connections. 
