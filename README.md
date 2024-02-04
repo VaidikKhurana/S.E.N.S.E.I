@@ -45,6 +45,13 @@ The project is implemented in Python, leveraging various libraries and technolog
 - **Integration with IoT Devices:** Expand support for controlling IoT devices such as smart home appliances, lights, and sensors.
 - **Enhanced Memory Management:** Implement advanced memory management techniques to store and retrieve information more efficiently.
 - **Integration with APIs:** Integrate with third-party APIs to access a wider range of services and information sources.
+- **Adding all in one setup file:** Adding a peculiar file that can setup the whole program to it's needs.
+
+**6. Using the program**
+Run the install_packages.bat file. 
+Run the blackcape.bat file.
 
 **6. Conclusion:**
 Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I) is a comprehensive virtual assistant designed to cater to various user needs and preferences. With its intuitive capabilities and extensive functionalities, S.E.N.S.E.I aims to simplify tasks, provide valuable information, and enhance user productivity and convenience. Through continuous development and enhancements, it strives to become an indispensable tool for users seeking seamless and efficient virtual assistance.
+
+
