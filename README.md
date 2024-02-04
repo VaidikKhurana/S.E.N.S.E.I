@@ -33,9 +33,9 @@ the flask server to login directly
 - **Facial Recognition Auth:** It has built in 2FA through normal pass and faci
 al recognition. One may edit samples by going in faceAuth folder and Generating Samples and training the model.
 
-** NOTE: PASSWORD FOR WEBLOGIN
+**NOTE: PASSWORD FOR WEBLOGIN**
 USERNAME - sensei
-PASS - blackcape**
+PASS - blackcape
 
 **4. Implementation:**
 The project is implemented in Python, leveraging various libraries and technologies to achieve the desired functionalities. It utilizes modular design principles, separating different functionalities into functions and classes for better organization and maintainability. Additionally, error handling mechanisms are implemented to ensure smooth execution and user-friendly interactions.
