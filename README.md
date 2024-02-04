@@ -1,4 +1,4 @@
-**Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I)**
+**Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I) v1.5.6 blackcape**
 ![S E N S E I](https://github.com/VaidikKhurana/S.E.N.S.E.I/assets/107250289/8ff77874-5ce0-45e3-a89c-d9fb020fbe71)
 
 **1. Introduction:**
@@ -55,3 +55,4 @@ Run the blackcape.bat file.
 Synthetic Entity Navigating Solutions and Engagements Intuitively (S.E.N.S.E.I) is a comprehensive virtual assistant designed to cater to various user needs and preferences. With its intuitive capabilities and extensive functionalities, S.E.N.S.E.I aims to simplify tasks, provide valuable information, and enhance user productivity and convenience. Through continuous development and enhancements, it strives to become an indispensable tool for users seeking seamless and efficient virtual assistance.
 
 
+**NOTE : THIS REPOSITORY BRANCH HAS MANUALLY UPDATED CODE OF THE LATEST RELEASE OF THE S.E.N.S.E.I PROJECT, FOR OLDER RELEASE REFER TO THE RELEASES SECTION**
