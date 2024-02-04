@@ -13,7 +13,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX #denotes the font type
 id = 4 #number of persons you want to Recognize
 
 
-names = ['Vaidik','Mumma', 'Baby Vaidik', 'Nani', 'Mumma']  #names, leave first empty bcz counter starts from 0
+names = ['Vaidik']  #names, leave first empty bcz counter starts from 0
 
 
 cam = cv2.VideoCapture(0, cv2.CAP_DSHOW) #cv2.CAP_DSHOW to remove warning
