@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        html, body, .box {
+            width: 100%;
+            height: 100%;
+            background: #2a2a2a;
+        }
+        .cyber-sensei {
+            font-size: 38px; /* Adjust font size as needed */
+            color: #515151; /* Adjust color as needed */
+            margin-top: 20px; /* Adjust margin as needed */
+            font-family: 'VT323', monospace; /* Set the hacker font */
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: blur(5px) contrast(10);
+            mix-blend-mode: screen;
+        }
+        .visualizer {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #fff;
+            transition: .5s;
+            transform: rotateZ(180deg);
+        }
+        .element {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            border-top: 25px solid #fff;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            transform-origin: top left;
+            transition: .25s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="visualizer"></div>
+    </div>
+    <script>
+        let audioContext;
+        let analyser;
+        let bufferLength;
+        let dataArray;
+        let elements;
+
+        const initVisualizer = (stream) => {
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            analyser = audioContext.createAnalyser();
+            const source = audioContext.createMediaStreamSource(stream);
+            source.connect(analyser);
+
+            bufferLength = analyser.frequencyBinCount;
+            dataArray = new Uint8Array(bufferLength);
+
+            const visualizer = document.querySelector('.visualizer');
+            elements = [];
+            for (let i = 0; i < bufferLength / 4; i++) {
+                const element = document.createElement('span');
+                element.classList.add('element');
+                elements.push(element);
+                visualizer.appendChild(element);
+            }
+            
+            updateVisualizer();
+        };
+
+        const updateVisualizer = () => {
+            requestAnimationFrame(updateVisualizer);
+            analyser.getByteFrequencyData(dataArray);
+            for (let i = 0; i < bufferLength / 4; i++) {
+                let item = dataArray[i * 4];
+                item = item > 150 ? item / 1.5 : item * 1.5;
+                elements[i].style.transform = `rotateZ(${i * (360 / (bufferLength / 4))}deg) translate(-50%, ${clamp(item, 50, 100)}px)`;
+            }
+        };
+
+        const clamp = (num, min, max) => {
+            if (num >= max) return max;
+            if (num <= min) return min;
+            return num;
+        }
+
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(initVisualizer)
+            .catch(function(err) {
+                console.log('The following error occurred: ' + err);
+            });
+    </script>
+</body>
+</html>

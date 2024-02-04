@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⁕ Login to S.E.N.S.E.I ⁕ </title>
+
+    <!-- Add the CDN link for Aptos font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-aptos@1.0.0/dist/fontsource-aptos.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #444444; /* Dark grey background */
+            color: #0f0f0f; /* Light text */
+            font-family: 'Aptos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use Aptos font */
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: -50px;
+        }
+
+        form {
+            border: 1px solid #686868; /* Dark border */
+            padding: 30px;
+            border-radius: 0;
+            width: 300px;
+            text-align: center;
+            background-color: #000000; /* Dark background */
+            box-shadow: 0 0 10px rgba(43, 42, 42, 0.1); /* Light shadow */
+            margin-bottom: -20px;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #666; /* Dark border */
+            color: #f0f0f0; /* Light text */
+            border-radius: 4px;
+            outline: none;
+            background-color: #555; /* Dark background */
+        }
+
+        input[type="submit"] {
+            background-color: #007acc; /* Accent color */
+            color: #f0f0f0; /* Light text */
+            cursor: pointer;
+            border: 1px solid #007acc; /* Accent color */
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .or-text {
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #f0f0f0; /* Light text */
+        }
+
+        .cybersensei{
+            color: #cccccc; /* Light gray */
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .e-loginportal {
+            color: #007acc; /* Accent color */
+            font-size: 14px;
+        }
+
+        img {
+            max-height: 80vh;
+            max-width: 100%;
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/016/552/314/original/animated-internet-problem-low-loading-speed-full-body-flat-person-on-black-background-with-alpha-channel-transparency-colorful-cartoon-style-hd-footage-of-character-for-animation-video.jpg" alt="Image" />
+            <input type="text" id="username" name="username" placeholder="Phone, username, or email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <p class="or-text">OR</p>
+            <p class="cybersensei">E-Login Portal</p>
+            <p class="e-loginportal">S.E.N.S.E.I v1.5</p>
+        </form>
+    </div>
+</body>
+</html>

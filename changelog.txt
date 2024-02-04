@@ -1,0 +1,36 @@
+S.E.N.S.E.I 
+---CHANGE LOG---
+The following is the changelog of the S.E.N.S.E.I(Synthetic Entity Navigating Solutions and Engagements Intuitively)
+project. Starting from 28th January of 2024. It has a list of updates and a nickname
+for the corresponding version.
+
+NOTE: NICKNAMES ARE FOR ONLY MAIN VERSIONS SUCH AS 1.5 AND 2.0
+- - - - - - - - - - - - - 
+28.1.24 - blackcape v1.5
+=> Added weblogin graphical user interface.
+=> Added print_chars_byspeed to print characters at desired speeds.
+=> Added domain configuration for global web login.
+=> Upgraded boot display.
+=> Added Arduino UNO R3 support with functions like:
+   Servo Control
+   LED Control
+=> Patched Arduino UNO R3 compatibility errors when not connected.
+=> Fixed overall bugs.
+=> Added client connection, for global connection and trace across the world.
+=> Added Clap Detection with boot and memory protocol.
+=> Added voice visualizer and webUI.
+=> Added ChangeLogs for S.E.N.S.E.I
+=> Added boot Facial Recognition(auth)
+- - - - - - - - - - - - - 
+
+______________________________________________________________________________________________
+
+- - - - - - - - - - - - - 
+29.1.24 - v1.56 beta.
+=> Added hand_tracking for gesture control excluding the actual program(test)
+=> Added Facial Recognition for boot and overall security(credits to avi updadhay)
+=> Added .exe support with USB autorun mode through .bat and .exe programs. 
+=> Added Automation of website autorun.
+--------------------------
+
+

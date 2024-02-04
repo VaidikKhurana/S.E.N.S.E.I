@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Add the CDN link for Aptos font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-aptos@1.0.0/dist/fontsource-aptos.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: #333;
+            font-family: 'Aptos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use Aptos font */
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: -50px;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            padding: 30px;
+            border-radius: 0;
+            width: 300px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: -20px;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            color: #333;
+            border-radius: 4px;
+            outline: none;
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #1890ff;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #1890ff;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .or-text {
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .login-facebook {
+            color: #001529;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .forgot-password {
+            color: #1890ff;
+            font-size: 14px;
+        }
+
+        img {
+            max-height: 80vh;
+            max-width: 100%;
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <img src="data:image/png;base64,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" alt=Image" />
+            <input type="text" id="username" name="username" placeholder="Phone, username, or email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <p class="or-text">OR</p>
+            <p class="login-facebook">Login with Facebook</p>
+            <p class="forgot-password">Forgot Password?</p>
+        </form>
+    </div>
+</body>
+</html>
